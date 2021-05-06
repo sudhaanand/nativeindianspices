@@ -1,0 +1,282 @@
+article, aside, details, figcaption, figure, footer, header, menu, nav, section
+	{
+	display: block;
+	}
+	
+*	
+	{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	}
+	
+img 
+	{
+	max-width: 100%;
+	}
+	
+body
+	{
+	font-family: muli, arial, sans-serif; 
+	}
+	
+	
+header h1	
+	{
+	font-family: "Space Mono", monospace;	
+	font-size: 3em;
+	padding-bottom:1%;
+	}
+	
+	
+h1	
+	{
+	font-size: 1.5em;
+	}
+
+
+h2	
+	{
+	font-size: 1.2em;
+	}	
+	
+
+/* CONTAINER STYLES*/
+
+#container
+	{
+	max-width: 62.5em; /* 1000px */
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.col_nav
+	{
+	width: 20%;
+	padding: 2% 0% 2% 0;
+	float: left;
+	text-align: left;
+	font-size: 1.2em;
+	}
+		
+.col_content
+	{
+	float: left;
+	width: 50%;
+	padding: 2% 2% 3% 1%;
+	}
+
+.col_content p	
+	{
+	/* text-indent: 2em;	 */
+	line-height: 1.5;
+	}
+	
+.col_spice
+	{
+	float: left;
+	width: 75%;
+	padding: 2% 2% 3% 0;
+	}
+	
+.col_spice img
+	{
+	display: block;	
+	margin-left: auto;
+    margin-right: auto;	
+	width: 50%;
+	}
+		
+.col_aside
+	{
+	float: left;
+	width: 30%;
+	padding: 2% 2% 3% 0;
+	}		
+		
+
+/* NAV MENU STYLES */
+
+
+nav ul
+	{ 
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+	}
+
+nav a
+	{
+	text-decoration: none;
+	color: #000000;
+	}
+
+nav a:visited
+	{
+	color: #000000;
+	}		
+
+
+nav a:hover
+	{
+	color: red;
+	background-color: #F7F7BB;
+	padding: 2% 5% 2% 5%;
+	}
+	
+nav ul li
+	{
+	font-weight: bold;
+	line-height: 1.2;
+	}	
+
+nav ul li a
+	{
+	font-weight: normal;
+	}
+	
+/*  MENU EXPANDER */
+
+.smallmenu
+	{
+	display: none;
+	font-size: 1em;
+	}
+
+
+
+/* FOOTER STYLES */
+
+footer 
+	{
+	clear: both;
+	float: left;
+	width: 100%;
+	padding: 2% 2% 3% 1%;
+	}
+
+/* FLOATS */
+
+.left
+	{
+	float: left;
+	margin-right: 1em;
+	}
+	
+
+
+@media screen and (max-width: 60em) {
+	
+.col_nav		
+	{
+	width:95%;
+	float: none;
+	}
+	
+.col_content
+	{
+	clear: left;
+	width: 70%;
+	}
+	
+.col_spice
+	{
+	clear: left;
+	width: 100%;
+	}	
+
+.col_aside	
+	{
+	width: 30%;
+	}
+	
+	
+header h1 
+	{
+	font-size: 1.5em;
+	margin-top: 0px;
+	}	
+	
+	
+h1 
+	{
+	font-size: 1.2em;
+	margin-top: 0px;
+	}
+	
+h2 
+	{
+	font-size: .9em;
+	margin-top: 0px;
+	}
+		
+
+.smallmenu	
+	{
+	display:block;
+	text-align: left;
+	padding-top: .5em;
+	border-top: 1px dotted #000000;
+	}	
+					
+.smallmenu a
+	{
+	color: #000000;	
+	font-size: 1em;
+  	font-weight: bold;
+	text-decoration: none;
+	}	
+	
+nav.expander li
+	{
+	display: block;
+	}				
+
+.expander
+	{
+	display: none
+	}	
+	
+	
+
+}
+
+
+
+@media screen and (max-width: 50em) {
+	
+.col_nav
+	{
+	width: 100%;
+	float: none;
+	}
+	
+.col_content
+	{
+	width:95%;
+	float: none;
+	}
+	
+.col_spice
+	{
+	width:95%;
+	float: none;
+	}	
+	
+
+.col_aside	
+	{
+	width:95%;
+	float: none;
+	}
+
+}
+
+
+
+@media only screen and (min-width : 61em) {
+
+.expander	{display: block !important}  /* just in case the menu wants to stay at display:none when viewport grows wider */
+
+
+}
+
